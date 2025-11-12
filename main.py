@@ -67,11 +67,11 @@ def init_user_db():
     c.execute('''CREATE TABLE IF NOT EXISTS lager
                  (id TEXT PRIMARY KEY, name TEXT NOT NULL, created_by TEXT,
                    access_users TEXT, system_type DEFAULT 'personal')''')
-    c.execute("INSERT OR IGNORE INTO users VALUES ('CKS.EXampleid', 'Matti')")
-    c.execute("INSERT OR IGNORE INTO users VALUES ('CKS-Example', 'Hubert')")
-    c.execute("INSERT OR IGNORE INTO users VALUES ('CKS-Exampledsa', 'Admin')")
-    c.execute("INSERT OR IGNORE INTO users VALUES ('CKS-7sdfuh-dfi', 'Christoffer Rentsch')")
-    c.execute("INSERT OR IGNORE INTO users VALUES ('CKS-udzsfzewliuhd', 'Steffen Mascher')")
+    c.execute("INSERT OR IGNORE INTO users VALUES ('CKS.Lee', 'Lee Wiedemann')")
+    c.execute("INSERT OR IGNORE INTO users VALUES ('Franzi.Tobias', 'Tobias Zießow')")
+    c.execute("INSERT OR IGNORE INTO users VALUES ('Franzi.Aurel', 'Marc Aurel Winkler')")
+    c.execute("INSERT OR IGNORE INTO users VALUES ('Franzi.Justus', 'Justusch Schmidt')")
+    c.execute("INSERT OR IGNORE INTO users VALUES ('Franzi,Finn', 'Finn Zajac')")
     conn.commit()
     conn.close()
 
